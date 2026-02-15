@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Patagonia Sur | Premium Chilean Fruit & Seafood Export</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.6/build/css/intlTelInput.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                    primary: "#16a34a",
+                    secondary: "#ea580c",
+                    "background-light": "#f8fafc",
+                    "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                    display: ["Playfair Display", "serif"],
+                    body: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Playfair Display', serif; }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(22, 163, 74, 0.85), rgba(234, 88, 12, 0.75));
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .checkbox-item:hover {
+            border-color: #16a34a;
+            background-color: #f0fdf4;
+        }
+        .checkbox-item input:checked + label {
+            font-weight: 600;
+            color: #16a34a;
+        }
+        .dark .checkbox-item {
+            border-color: #475569;
+        }
+        .dark .checkbox-item:hover {
+            border-color: #16a34a;
+            background-color: #14532d;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 transition-colors duration-300">
+
+    <!-- REDESIGNED NAVBAR -->
+    <nav class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <!-- Centered Top Title -->
+        <div class="text-center py-4 bg-white dark:bg-background-dark">
+            <h1 class="text-3xl md:text-4xl font-black tracking-widest text-primary dark:text-white brand-font uppercase">
+                Patagonia Sur
+            </h1>
+        </div>
+
+        <!-- Divider Line -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <hr class="border-slate-200 dark:border-slate-800">
+        </div>
+
+        <!-- Bottom Menu -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <img alt="Patagonia Sur Logo" class="h-14 w-auto object-contain" src="../assets/patagonia-logo.jpg" />
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#productos">Products</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#especialidades">Specialties</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#contacto">Contact</a>
+                    <a class="text-xs font-bold px-2 py-1 rounded border border-slate-300 hover:bg-slate-100 dark:border-slate-600 dark:hover:bg-slate-800 transition-all" href="../index.html">ES</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" onclick="document.documentElement.classList.toggle('dark')">
+                        <span class="material-symbols-outlined text-xl">dark_mode</span>
+                    </button>
+                    <a class="bg-primary text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-green-700 transition-all shadow-lg" href="https://wa.me/56959079058?text=Hello,%20I%20would%20like%20to%20request%20an%20export%20quote%20from%20Patagonia%20Sur." target="_blank">
+                        Quote Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="relative h-[85vh] flex items-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img alt="Fresh Chilean fruits" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=1920&q=80" />
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-2xl text-white">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    From Chile to the World <br />
+                    <span class="text-yellow-300">with Excellence</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-10 opacity-95 leading-relaxed">
+                    We export the freshest fruits and highest quality seafood from Chile. International certifications and full traceability.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a class="bg-white text-primary px-8 py-4 rounded-full font-bold text-center hover:bg-green-50 transition-all flex items-center justify-center gap-2" href="https://wa.me/56959079058?text=Hello,%20I%20would%20like%20to%20request%20an%20export%20quote%20from%20Patagonia%20Sur." target="_blank">
+                    Request Quote <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                    <a class="border-2 border-white/70 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold text-center hover:bg-white/10 transition-all flex items-center justify-center gap-2" href="#productos">
+                    View Products <span class="material-symbols-outlined">inventory_2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PRODUCTS -->
+    <section class="py-24 bg-white dark:bg-slate-900" id="productos">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary dark:text-white mb-4">Our Export Products</h2>
+                <p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Fresh seasonal Chilean fruits with international certification</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 hover:shadow-2xl transition-all hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-3xl">🍇</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Grapes</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-3 text-center">Season: Nov - Apr</p>
+                    <ul class="text-xs space-y-1 text-slate-500">
+                    <li>• Red Globe</li>
+                    <li>• Thompson Seedless</li>
+                    <li>• Crimson Seedless</li>
+                    </ul>
+                </div>
+                <div class="group bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 hover:shadow-2xl transition-all hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-3xl">🍒</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Cherries</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-3 text-center">Season: Nov - Jan</p>
+                    <ul class="text-xs space-y-1 text-slate-500">
+                    <li>• Bing</li>
+                    <li>• Lapins</li>
+                    <li>• Santina</li>
+                    </ul>
+                </div>
+                <div class="group bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 hover:shadow-2xl transition-all hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-3xl">🥝</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Kiwis</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-3 text-center">Season: Mar - Nov</p>
+                    <ul class="text-xs space-y-1 text-slate-500">
+                    <li>• Hayward</li>
+                    <li>• Gold Kiwi</li>
+                    </ul>
+                </div>
+                <div class="group bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 hover:shadow-2xl transition-all hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-3xl">🫐</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Blueberries</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-3 text-center">Season: Oct - Mar</p>
+                    <ul class="text-xs space-y-1 text-slate-500">
+                    <li>• Duke</li>
+                    <li>• Legacy</li>
+                    <li>• Brigitta</li>
+                    </ul>
+                </div>
+                <div class="group bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 hover:shadow-2xl transition-all hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-3xl">🍓</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Strawberries</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-3 text-center">Season: Aug - Dec</p>
+                    <ul class="text-xs space-y-1 text-slate-500">
+                    <li>• Camarosa</li>
+                    <li>• Albion</li>
+                    </ul>
+                </div>
+                <div class="group bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 hover:shadow-2xl transition-all hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-pink-100 dark:bg-pink-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-3xl">🍑</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Raspberries</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-3 text-center">Season: Nov - Apr</p>
+                    <ul class="text-xs space-y-1 text-slate-500">
+                    <li>• Heritage</li>
+                    <li>• Meeker</li>
+                    </ul>
+                </div>
+                <div class="group bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 hover:shadow-2xl transition-all hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-red-100 dark:bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-3xl">🍎</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Apples</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-3 text-center">Season: Feb - Jul</p>
+                    <ul class="text-xs space-y-1 text-slate-500">
+                    <li>• Gala</li>
+                    <li>• Fuji</li>
+                    <li>• Granny Smith</li>
+                    </ul>
+                </div>
+                <div class="group bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 hover:shadow-2xl transition-all hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-3xl">🍊</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-center">Other Fruits</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-3 text-center">Check availability</p>
+                    <ul class="text-xs space-y-1 text-slate-500">
+                    <li>• Plums</li>
+                    <li>• Peaches</li>
+                    <li>• Nectarines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALTIES -->
+    <section class="py-24 bg-slate-50 dark:bg-slate-950" id="especialidades">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary dark:text-white mb-4">Our Specialties</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 text-center shadow-lg">
+                    <div class="w-20 h-20 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="material-symbols-outlined text-4xl text-primary">eco</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Fresh Fruits</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Export of seasonal Chilean fruits with GlobalGAP certification and full traceability.</p>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 text-center shadow-lg">
+                    <div class="w-20 h-20 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="material-symbols-outlined text-4xl text-blue-600">water_drop</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Seafood</h3>
+                    <p class="text-slate-600 dark:text-slate-400">Chilean sea products: salmon, hake, conger eel and fresh seafood with sanitary certification.</p>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-2xl p-8 text-center shadow-lg">
+                    <div class="w-20 h-20 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="material-symbols-outlined text-4xl text-secondary">public</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Global Export</h3>
+                    <p class="text-slate-600 dark:text-slate-400">We ship to over 30 countries with specialized logistics and international regulation compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contacto" class="py-24 bg-white dark:bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary dark:text-white mb-4">Request a Quote</h2>
+                <p class="text-slate-500 dark:text-slate-400">Complete the form and a sales executive will contact you within 24 hours.</p>
+            </div>
+
+            <form id="contactForm" class="max-w-2xl mx-auto bg-slate-50 dark:bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700">
+                <div class="grid grid-cols-1 gap-6">
+                    <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Full Name *</label>
+                    <input type="text" name="fullName" required class="w-full rounded-lg border-slate-300 focus:border-primary focus:ring-primary dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="Your full name" />
+                    </div>
+                    <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required class="w-full rounded-lg border-slate-300 focus:border-primary focus:ring-primary dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="Phone number" />
+                    </div>
+                    <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Email Address *</label>
+                    <input type="email" name="email" required class="w-full rounded-lg border-slate-300 focus:border-primary focus:ring-primary dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="you@company.com" />
+                    </div>
+                    <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Company</label>
+                    <input type="text" name="company" class="w-full rounded-lg border-slate-300 focus:border-primary focus:ring-primary dark:bg-slate-700 dark:border-slate-600 dark:text-white" placeholder="Your company name" />
+                    </div>
+                    <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Country *</label>
+                    <select name="country" required class="w-full rounded-lg border-slate-300 focus:border-primary focus:ring-primary dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                    <option value="">Select your country</option>
+                    <option value="Argentina">🇦🇷 Argentina</option>
+                    <option value="Bolivia">🇧🇴 Bolivia</option>
+                    <option value="Brasil">🇧🇷 Brazil</option>
+                    <option value="Canadá">🇨🇦 Canada</option>
+                    <option value="Chile">🇨🇱 Chile</option>
+                    <option value="China">🇨🇳 China</option>
+                    <option value="Colombia">🇨🇴 Colombia</option>
+                    <option value="Corea del Sur">🇰🇷 South Korea</option>
+                    <option value="Costa Rica">🇨🇷 Costa Rica</option>
+                    <option value="Ecuador">🇪🇨 Ecuador</option>
+                    <option value="El Salvador">🇸🇻 El Salvador</option>
+                    <option value="España">🇪🇸 Spain</option>
+                    <option value="Estados Unidos">🇺🇸 United States</option>
+                    <option value="Francia">🇫🇷 France</option>
+                    <option value="Guatemala">🇬🇹 Guatemala</option>
+                    <option value="Honduras">🇭🇳 Honduras</option>
+                    <option value="India">🇮🇳 India</option>
+                    <option value="Italia">🇮🇹 Italy</option>
+                    <option value="Japón">🇯🇵 Japan</option>
+                    <option value="México">🇲🇽 Mexico</option>
+                    <option value="Nicaragua">🇳🇮 Nicaragua</option>
+                    <option value="Panamá">🇵🇦 Panama</option>
+                    <option value="Paraguay">🇵🇾 Paraguay</option>
+                    <option value="Perú">🇵🇪 Peru</option>
+                    <option value="Portugal">🇵🇹 Portugal</option>
+                    <option value="Reino Unido">🇬🇧 United Kingdom</option>
+                    <option value="República Dominicana">🇩🇴 Dominican Republic</option>
+                    <option value="Uruguay">🇺🇾 Uruguay</option>
+                    <option value="Venezuela">🇻🇪 Venezuela</option>
+                    <option value="Other">🌍 Other country</option>
+                    </select>
+                    </div>
+                    <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-3">Products of Interest *</label>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <label class="checkbox-item dark:bg-slate-700">
+                    <input type="checkbox" name="interest" value="Uvas" class="rounded text-primary focus:ring-primary mr-3" />
+                    <span class="text-sm">🍇 Grapes</span>
+                    </label>
+                    <label class="checkbox-item dark:bg-slate-700">
+                    <input type="checkbox" name="interest" value="Cerezas" class="rounded text-primary focus:ring-primary mr-3" />
+                    <span class="text-sm">🍒 Cherries</span>
+                    </label>
+                    <label class="checkbox-item dark:bg-slate-700">
+                    <input type="checkbox" name="interest" value="Kiwis" class="rounded text-primary focus:ring-primary mr-3" />
+                    <span class="text-sm">🥝 Kiwis</span>
+                    </label>
+                    <label class="checkbox-item dark:bg-slate-700">
+                    <input type="checkbox" name="interest" value="Arándanos" class="rounded text-primary focus:ring-primary mr-3" />
+                    <span class="text-sm">🫐 Blueberries</span>
+                    </label>
+                    <label class="checkbox-item dark:bg-slate-700">
+                    <input type="checkbox" name="interest" value="Frutillas" class="rounded text-primary focus:ring-primary mr-3" />
+                    <span class="text-sm">🍓 Strawberries</span>
+                    </label>
+                    <label class="checkbox-item dark:bg-slate-700">
+                    <input type="checkbox" name="interest" value="Frambuesas" class="rounded text-primary focus:ring-primary mr-3" />
+                    <span class="text-sm">🍑 Raspberries</span>
+                    </label>
+                    <label class="checkbox-item dark:bg-slate-700">
+                    <input type="checkbox" name="interest" value="Manzanas" class="rounded text-primary focus:ring-primary mr-3" />
+                    <span class="text-sm">🍎 Apples</span>
+                    </label>
+                    <label class="checkbox-item dark:bg-slate-700">
+                    <input type="checkbox" name="interest" value="Mariscos" class="rounded text-primary focus:ring-primary mr-3" />
+                    <span class="text-sm">🦞 Seafood</span>
+                    </label>
+                    <label class="checkbox-item dark:bg-slate-700">
+                    <input type="checkbox" name="interest" value="Otras Frutas" class="rounded text-primary focus:ring-primary mr-3" />
+                    <span class="text-sm">🍊 Other Fruits</span>
+                    </label>
+                    </div>
+                    </div>
+                    <div>
+                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Additional Comments</label>
+                    <textarea name="comments" rows="4" maxlength="500" class="w-full rounded-lg border-slate-300 focus:border-primary focus:ring-primary dark:bg-slate-700 dark:border-slate-600 dark:text-white resize-none" placeholder="Tell us about your export needs (max. 500 characters)"></textarea>
+                    <p class="text-xs text-slate-400 text-right mt-1">Max. 500 characters</p>
+                    </div>
+                    <button type="submit" id="submitBtn" class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:bg-green-700 transition-colors mt-6 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center gap-2">
+                    <span>Send Request</span>
+                    </button>
+                    <div id="formMessage" class="hidden mt-4 p-4 rounded-lg text-center text-sm font-medium"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER (FIX LOGO) -->
+    <footer class="bg-primary dark:bg-black text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-white/10 pb-16">
+                <div>
+                    <img alt="Patagonia Sur Logo" class="h-20 w-auto mb-6 object-contain" src="../assets/patagonia-logo.jpg" />
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                    Exporters of fresh Chilean fruits and seafood of the highest quality. From Curicó to the world.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-lg font-bold mb-6">Contact</h5>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                    <li>📍 Curicó, Chile</li>
+                    <li>📧 ventaspatagoniasurspa@gmail.com</li>
+                    <li>📱 <a href="https://wa.me/56959079058" class="hover:text-white transition-colors">+56 9 5907 9058</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-bold mb-6">Links</h5>
+                    <ul class="space-y-3 text-slate-300 text-sm">
+                    <li><a class="hover:text-white transition-colors" href="#productos">Products</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#especialidades">Specialties</a></li>
+                    <li><a class="hover:text-white transition-colors" href="#contacto">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 text-center text-xs text-slate-400">
+                <p>© 2026 Patagonia Sur. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition-transform hover:scale-110 active:scale-95" href="https://wa.me/56959079058?text=Hello,%20I%20would%20like%20to%20request%20an%20export%20quote%20from%20Patagonia%20Sur." target="_blank">
+            <span class="material-symbols-outlined text-3xl">chat</span>
+        </a>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.6/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script>
+        const phoneInput = document.querySelector("#phone");
+        const iti = window.intlTelInput(phoneInput, {
+            initialCountry: "us",
+            preferredCountries: ["us", "ca", "gb", "cl", "mx"],
+            separateDialCode: true,
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.6/build/js/utils.js"
+        });
+
+        const SUPABASE_URL = 'https://lhdqelncyihcibemnbpl.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxoZHFlbG5jeWloY2liZW1uYnBsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzExNjg0MTQsImV4cCI6MjA4Njc0NDQxNH0.ow_Fy5ApbQ7CY_LXktzVC3MWwnil_MizXnrS0bZonKQ';
+
+        const _supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            if (!_supabase) return;
+            const selectedInterests = document.querySelectorAll('input[name="interest"]:checked');
+            if (selectedInterests.length === 0) {
+                showMessage('error', 'Please select at least one product of interest.');
+                return;
+            }
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending...';
+            const formData = new FormData(contactForm);
+            const fullPhone = iti.getNumber();
+            const interests = Array.from(selectedInterests).map(cb => cb.value).join(', ');
+            const data = {
+                full_name: formData.get('fullName'),
+                phone: fullPhone,
+                email: formData.get('email'),
+                company: formData.get('company') || null,
+                country: formData.get('country'),
+                interest: interests,
+                comments: formData.get('comments') || null
+            };
+            try {
+                const { error } = await _supabase.from('contactos_patagonia_sur').insert([data]);
+                if (error) throw error;
+                contactForm.innerHTML = `<div class="text-center py-10"><h3 class="text-2xl font-bold text-primary mb-2">Request Received!</h3><p class="mb-8">An executive will contact you shortly.</p><a href="https://wa.me/56959079058" class="bg-green-500 text-white px-8 py-3 rounded-full font-bold">WhatsApp</a></div>`;
+            } catch (error) {
+                showMessage('error', 'Error sending.');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span>Send Request</span>';
+            }
+        });
+
+        function showMessage(type, text) {
+            formMessage.textContent = text;
+            formMessage.className = `mt-4 p-4 rounded-lg text-center text-sm font-medium ${type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`;
+            formMessage.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
